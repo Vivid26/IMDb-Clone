@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>IMDb Clone</title>
+</head>
+<body>
+    <div id="search-bar">
+        <h1>IMDB</h1>
+        <form id="search-form" autocomplete="off">
+            <input list="result" type="text" id="search-input" placeholder="Search IMDb" onKeyUp="showResults(this.value)">
+            <datalist id="result"></datalist>
+        </form>
+    </div>
+    <div>
+        <h1 id="category-title">Now Playing Movies</h1>
+        <span id="category-favourite"><a href="./favourites.html">Favourites</a></span>
+    </div>
+    <div id="movies-grid"></div>
+    <div id="footer">
+        <img src="./logo.svg" alt="logo">
+        <p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./key.js"></script>
+</body>
+</html>

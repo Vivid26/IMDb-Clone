@@ -1,5 +1,6 @@
 body {
     background: #121212;
+    /*font-family: "Poppins", sans-serif;*/
 }
 
 #movies-grid {
@@ -26,6 +27,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: lighter;
     color: lighter;
+    display: inline-block;
 }
 
 .movie-card p {
@@ -33,6 +35,52 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     color: lightgray;
     
+}
+
+.favourite-symbol {
+    margin-left: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+    background: transparent;
+    border: none;
+}
+
+a:link, a:visited, a:hover,a:active  {
+    color: #f4c518;
+    text-decoration: none;
+}
+
+a p {
+    text-decoration: none;
+}
+
+a h1 {
+    color: white;
+    text-decoration: none;
+}
+
+datalist {
+    position: absolute;
+    max-height: 20em;
+    border: 0 none;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+datalist option {
+    font-size: 0.8em;
+    padding: 0.3em 1em;
+    background-color: #ccc;
+    cursor: pointer;
+}
+  
+  /* option active styles */
+datalist option:hover, datalist option:focus {
+    color: #fff;
+    background-color: #036;
+    outline: 0 none;
 }
 
 #search-bar {
@@ -66,10 +114,14 @@ border-radius: 5px;
 }
 
 #category-favourite {
-    margin-left: 30vw;
+    margin-left: 25vw;
     color: #f4c518;
     display: inline-block;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+#category-favourite-min{
+    display: none;
 }
 
 #footer {
@@ -87,38 +139,59 @@ border-radius: 5px;
     color: darkgray;
 }
 
-a:link, a:visited, a:hover,a:active  {
-    color: #f4c518;
-    text-decoration: none;
+
+/* Media Queries */
+@media screen and (max-width:1200px){
+    #search-bar input {
+        width: 630px;
+    }
+
 }
 
-a p {
-    text-decoration: none;
+@media screen and (max-width:850px){
+    #search-bar input {
+        margin-left: 10px;
+        width: 330px;
+    }
+
+    #category-favourite{
+        display: none;
+    }
+
+    #category-favourite-min{
+        margin: 5px;
+        display: inline-block;
+    }
+
+    #search-bar h1 {
+        font-size: large;
+    }
+
+
 }
 
-a h1 {
-    color: white;
-    text-decoration: none;
+@media screen and (max-width:450px){
+    #search-bar input {
+        margin-left: 10px;
+        width: 140px;
+    }
+
+    #category-title {
+        font-size: x-large;
+    }
+
+    #category-favourite{
+        display: none;
+    }
+
+    #category-favourite-min{
+        margin: 5px;
+        display: inline-block;
+    }
+
+    #search-bar h1 {
+        font-size: large;
+    }
+
 }
 
-datalist {
-    position: absolute;
-    max-height: 20em;
-    border: 0 none;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  
-datalist option {
-    font-size: 0.8em;
-    padding: 0.3em 1em;
-    background-color: #ccc;
-    cursor: pointer;
-  }
-  
-  /* option active styles */
-datalist option:hover, datalist option:focus {
-    color: #fff;
-    background-color: #036;
-    outline: 0 none;
-  }

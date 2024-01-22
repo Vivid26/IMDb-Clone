@@ -1,6 +1,6 @@
 # IMDb-Clone
 
-A simple IMDb clone website built with HTML, CSS, and JavaScript. No Javascript library is used.
+A simple IMDb partial clone website built with HTML, CSS, and JavaScript. No Javascript library is used.
 
 In this project, you will find my own version of IMDb using HTML, CSS, and JavaScript. Functionally, this website will display a list of movies that are now playing in theaters and allow the user to search for movies by the movie name.
 
@@ -9,26 +9,33 @@ In this project, you will find my own version of IMDb using HTML, CSS, and JavaS
 ## **Objectives**
 Upon the completion of this project, I am able to:
 - Describe the mechanics of displaying dynamic data on a webpage.
+- Describe the localStorage interface functionality.
+- Describe URLSearchParams constructor to manipulate url.
 - Use an API to query for data and manipulate them based on your use case.
 - Write JavaScript code to dynamically generate, display, and replace HTML elements.
 
 ## **Core Features**
 
-- [ ]  At least 2 defined sections:
-    - [ ]  Search Bar
-    - [ ]  Movie Categories Title
-    - [ ]  Movies Grid
-- [ ]  Display a grid of movies now playing in theaters when the page is first loaded. For each movie, create a **`movie-card`** that displays these items:
-    - [ ]  Poster
-    - [ ]  Title
-    - [ ]  Rating
-- [ ]  Display the search result when the user searches for a movie
-- [ ]  Demonstrate CSS styling on various elements, including but not limited to:
-    - [ ]  Background colors
-    - [ ]  Images
-    - [ ]  Text
-    - [ ]  Positioning
-  
+    - At least 2 defined sections:
+        - [ ]  Search Bar
+        - [ ]  Movie Categories Title
+        - [ ]  Favourite Movie Link
+        - [ ]  Movies Grid
+    - Display a grid of movies now playing in theaters when the page is first loaded. For each movie, create a **`movie-card`** that displays these items:
+        - [ ]  Poster
+        - [ ]  Title
+        - [ ]  Rating
+        - [ ]  Add/Remove Favourite Button 
+
+    - Display the search result when the user searches for a movie.
+        - [ ] Populate datalist options with the movies names list.
+    - Demonstrate CSS styling on various elements, including but not limited to:
+        - [ ]  Background colors
+        - [ ]  Images
+        - [ ]  Text
+        - [ ]  Positioning
+        - [ ]  Media Queries for responsiveness.
+    
 ## **Stretch Features**
 
 - [ ]  When a user clicks on a movie card, redirect to that movie’s IMDb page
@@ -41,9 +48,10 @@ Upon the completion of this project, I am able to:
 ### [TMDB API Documentation](https://developers.themoviedb.org/3/getting-started/introduction)
 
 ## Functionality
-- ....
-- ....
-- ....
+- You will get Movies list as per your search. Auto suggestion functionality available as you type movie name in search bar.
+- You will get movie details for desired movie. 
+- You can add movies to your favourite movies list or you can remove movies from your favourite movies list.
+
 
 ## Tools Used
 <img align="left" src="https://user-images.githubusercontent.com/18380165/224329335-3cdf989b-bdce-41e6-82dc-7d4c50d5f283.png" width="100" height="100">

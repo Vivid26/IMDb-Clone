@@ -102,7 +102,7 @@ const getfavouriteBtn = (movieName) =>{
 
 // ************* API call to get a movie details to add in Favourite Movies Collection**********************//
 let getFavouriteMovie = async (movieName) => {
-	let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+	let url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
     const response = await fetch(url);
     const jsonResponse = await response.json();
     const movies = jsonResponse;

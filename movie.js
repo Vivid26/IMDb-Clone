@@ -5,7 +5,7 @@ const result = document.getElementById("result");
 
 const params = new URLSearchParams(document.location.search);
 const movieName = params.get("movieName");
-const url = `http://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
+const url = `https://www.omdbapi.com/?t=${movieName}&apikey=${key}`;
 
 
 //*************To get Movie Card to display movie on movie page********************//

@@ -121,8 +121,9 @@ const addToFavourites = function (movieName) {
 		const movie = data;
 		if(movie.Title.toLowerCase().trim() === movieName.toLowerCase().trim()){
 			window.localStorage.setItem(movieName.toLowerCase().trim(),JSON.stringify(movie)); //used localStorage to save favourites data
-            this.document.activeElement.innerHTML = " 🩷 ";
-            this.document.activeElement.onclick = "removeFromFavourites(this.parentNode.children[0].children[2].textContent)";
+			window.location.reload();
+            //this.document.activeElement.innerHTML = " 🩷 ";
+            //this.document.activeElement.onclick = "removeFromFavourites(this.parentNode.children[0].children[2].textContent)";
 		}
         return true;
     }).catch(function (err) {

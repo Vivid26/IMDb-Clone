@@ -92,7 +92,7 @@ fetchMoviesNowPlaying();
 
 // ************* Get Add/Remove Favourite button while movie card insertion into DOM **********************//
 const getfavouriteBtn = (movieName) =>{
-    if(Object.keys(window.localStorage).includes(movieName)){
+    if(Object.keys(window.localStorage).includes(movieName.toLowerCase().trim())){
         return `<button class="favourite-symbol" onclick="removeFromFavourites(this.parentNode.children[0].children[2].textContent)"> 🩷 </button>`;
     }else {
         return `<button class="favourite-symbol" onclick="addToFavourites(this.parentNode.children[0].children[2].textContent)"> 🤍 </button>`;

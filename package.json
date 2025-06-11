@@ -1,0 +1,21 @@
+{
+  "name": "imdb-clone",
+  "version": "1.0.0",
+  "description": "A simple IMDb partial clone website built with HTML, CSS, and JavaScript. No Javascript library is used.",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vivid26/IMDb-Clone.git"
+  },
+  "author": "PJB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vivid26/IMDb-Clone/issues"
+  },
+  "homepage": "https://github.com/Vivid26/IMDb-Clone",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
